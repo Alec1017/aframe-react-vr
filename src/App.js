@@ -2,7 +2,7 @@ import 'aframe';
 import 'aframe-animation-component';
 import 'aframe-environment-component';
 import 'aframe-particle-system-component';
-import lowpoly from './components/aframe-lowpoly';
+import './components/aframe-lowpoly';
 import 'babel-polyfill';
 import { Entity, Scene } from 'aframe-react';
 import React, { Component } from 'react';
@@ -33,8 +33,6 @@ class App extends Component {
         groundcolor: '#8a7f8a',
         grid: 'none'
       }}>
-
-
 
         // Low-poly entity
         <Entity
