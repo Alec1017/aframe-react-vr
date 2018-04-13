@@ -1,4 +1,4 @@
-import 'aframe';
+import AFRAME, { THREE } from 'aframe';
 
 AFRAME.registerComponent('lowpoly', {
   schema: {
@@ -58,7 +58,7 @@ AFRAME.registerComponent('lowpoly', {
 
         let sphere = new THREE.Mesh(geometry, material);
         // Reposition properly
-        shpere.position.set(
+        sphere.position.set(
           vertices[i].x,
           vertices[i].y + 4,
           vertices[i].z + -10.0
