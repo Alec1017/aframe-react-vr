@@ -16,6 +16,9 @@ AFRAME.registerComponent('lowpoly', {
     // Get the reference to the scene
     const scene = document.querySelector('a-scene').object3D;
 
+    // Get the position of the object to which the component is attached
+    const { x, y, z } = this.el.getAttribute('position');
+
     // Modify the color of the material
     obj.material = new THREE.MeshPhongMaterial({
       color: this.data.color,
@@ -24,7 +27,8 @@ AFRAME.registerComponent('lowpoly', {
 
     // Wireframe segments initialization
     // Define geometry and material for the wireframe segments
-    const wireGeom = new THREE.OctahedronGeometry(2.5, 2);
+    const objRadius = Number(this.el.getAttribute('radius'));
+    const wireGeom = new THREE.OctahedronGeometry(objRadius + .5, 2);
     const wireMaterial = new THREE.MeshPhongMaterial({
       color: '#FFFFFF',
       opacity: this.data.opacity,
@@ -36,8 +40,7 @@ AFRAME.registerComponent('lowpoly', {
     const wireFrame = new THREE.Mesh(wireGeom, wireMaterial);
 
     // Set position of the mesh to the position of the sphere
-    const { x, y, z} = obj.position;
-    wireFrame.position.set(0.0, 4, -10.0);
+    wireFrame.position.set(x, y, z);
 
     // Add wireframe to the scene
     if (this.data.wireframe) {
@@ -54,7 +57,7 @@ AFRAME.registerComponent('lowpoly', {
         // Define geometry and material for a wireframe node
         let geometry = new THREE.SphereGeometry(0.045, 16, 16);
         let material = new THREE.MeshBasicMaterial({
-          color: '#FFFFF',
+          color: '#FFFFFF',
           opacity: this.data.opacity,
           shading: THREE.FlatShading,
           transparent: true
@@ -65,9 +68,9 @@ AFRAME.registerComponent('lowpoly', {
 
         // Set position of the spheres
         sphere.position.set(
-          vertices[i].x,
-          vertices[i].y + 4,
-          vertices[i].z + -10.0
+          vertices[i].x + x,
+          vertices[i].y + y,
+          vertices[i].z + z
         );
 
         // Add sphere to the group
@@ -77,5 +80,14 @@ AFRAME.registerComponent('lowpoly', {
       // Add spheres to the scene
       scene.add(spheres);
     }
+  },
+
+
+  update: function() {
+    // Get the reference of the object to which the component is attached
+    const obj = this.el.getObject3D('mesh');
+
+    // Modify the color of the material during runtime
+    obj.material.color = new THREE.Color(this.data.color);
   }
 });
