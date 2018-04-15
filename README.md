@@ -1,12 +1,19 @@
-## aframe-react-boilerplate
+<h1 align="center">aframe-react-vr</h1>
 
-VR application built combining with
-[A-Frame](https://aframe.io) and React with
-[aframe-react](https://github.com/ngokevin/aframe-react).
+<p align="center">
+  <img
+    width="500"
+    alt="aframe-react-vr"
+    src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Vr-app.jpg">
+</p>
 
-![aframe-react-boilerplate](https://cloud.githubusercontent.com/assets/674727/24401414/286adeec-1369-11e7-8c41-22810d22d8d0.png)
+<p align="center">Small virtual reality application made with A-Frame, React, and Three.js</p>
 
-### Installation
+## Live Demo
+https://aframe-react-vr-dodpygshcc.now.sh/
+<p>Also compatible with a smart phone and mobile VR viewer, such as Google Cardboard</p>
+
+## Usage
 
 To get started:
 
@@ -15,8 +22,10 @@ npm install
 npm start
 ```
 
-To publish to GitHub Pages:
-
-```bash
-npm run publish
-```
+## Libraries
+- [react](https://facebook.github.io/react/)
+- [aframe](https://github.com/aframevr/aframe/)
+- [aframe-react](https://github.com/ngokevin/aframe-react)
+- [aframe-animation-component](https://github.com/ngokevin/kframe/tree/master/components/animation/)
+- [aframe-environment-component](https://github.com/feiss/aframe-environment-component)
+- [aframe-event-set-component](https://github.com/ngokevin/kframe/tree/master/components/event-set/)

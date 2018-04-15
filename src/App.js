@@ -1,10 +1,7 @@
 import 'aframe';
-import 'aframe-effects';
 import 'aframe-animation-component';
 import 'aframe-environment-component';
-import 'aframe-particle-system-component';
 import 'aframe-event-set-component';
-import 'babel-polyfill';
 import { Entity, Scene } from 'aframe-react';
 import React, { Component } from 'react';
 
@@ -32,7 +29,6 @@ class App extends Component {
   render() {
     return (
       <Scene
-        fxaa
         environment={{
           preset: 'starry',
           seed: 2,
