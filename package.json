@@ -2,6 +2,7 @@
   "name": "aframe-react-vr",
   "version": "1.0.0",
   "description": "Small aframe and react VR app",
+  "homepage": "http://Alec1017.github.io/aframe-react-vr",
   "dependencies": {
     "aframe": "^0.8.2",
     "aframe-animation-component": "^3.2.5",
@@ -17,11 +18,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Alec DiFederico",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^2.0.0",
     "now": "^11.1.4"
   }
 }
