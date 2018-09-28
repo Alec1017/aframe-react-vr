@@ -10,7 +10,7 @@
 <p align="center">Small virtual reality application made with A-Frame, React, and Three.js</p>
 
 ## Live Demo
-https://aframe-react-vr-dodpygshcc.now.sh/
+https://alec1017.github.io/aframe-react-vr/
 <p>Also compatible with a smart phone and mobile VR viewer, such as Google Cardboard</p>
 
 ## Usage
