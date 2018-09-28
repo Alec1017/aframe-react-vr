@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Small aframe and react VR app",
   "dependencies": {
-    "aframe": "^0.5.0",
+    "aframe": "^0.8.2",
     "aframe-animation-component": "^3.2.5",
     "aframe-effects": "^0.8.0",
     "aframe-environment-component": "^1.0.0",
