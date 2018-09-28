@@ -11,7 +11,7 @@
 
 ## Live Demo
 https://alec1017.github.io/aframe-react-vr/
-<p>Also compatible with a smart phone and mobile VR viewer, such as Google Cardboard</p>
+<p>Also compatible with smart phones and mobile VR viewers, such as Google Cardboard</p>
 
 ## Usage
 
