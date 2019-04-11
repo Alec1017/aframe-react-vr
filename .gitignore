@@ -1,5 +1,11 @@
+# Dependency directories
 node_modules/
-npm-debug.log
-*.sw[ponm]
-gh-pages
-build
+
+# Compiled output
+/dist
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
