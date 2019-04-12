@@ -10,3 +10,6 @@ logs
 *.log
 yarn-debug.log*
 yarn-error.log*
+
+# lock files
+yarn.lock
