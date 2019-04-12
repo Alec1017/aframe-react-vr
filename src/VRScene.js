@@ -97,6 +97,12 @@ class VRScene extends React.Component {
             raycaster="objects: .clickable"
           />
         </Entity>
+
+        // Controls
+        <Entity 
+          oculus-touch-controls="hand: right"
+  
+        />
       </Scene>
     );
   }
