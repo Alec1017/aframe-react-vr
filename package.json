@@ -1,14 +1,15 @@
 {
-  "name": "react-starter-code",
-  "version": "1.0.0",
-  "description": "React starter code from scratch",
-  "main": "index.js",
-  "repository": "git@github.com:Alec1017/react-starter-code.git",
+  "name": "aframe-react-vr",
+  "version": "1.0.1",
+  "description": "Small aframe and react VR app",
+  "homepage": "https://Alec1017.github.io/aframe-react-vr",
+  "repository": "git@github.com:Alec1017/aframe-react-vr.git",
   "author": "Alec DiFederico",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
